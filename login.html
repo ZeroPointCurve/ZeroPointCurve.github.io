@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        #grad1 {
+            height: 125px;
+            background-image: linear-gradient(to right, red, yellow);
+        }
+    </style>
+    <!--Displays color header-->
+    <title>Login @ UAT Space Program</title>
+    <!--Tab Title-->
+    <meta name="author" content="Charles Collupy">
+    <script src="script.js"></script>
+    <!--links javascript-->
+</head>
+
+<body>
+    <div id="grad1"></div>
+    <h1>
+        Welcome to the UAT Space login page. Please enter your credentials.
+    </h1>
+    <p id="loginStatus">
+        Status of login...
+    </p>
+    <!-- Creates the input blocks to type name and badge number, references the Login JS for rules defining entry into the 
+    UAT Space page-->
+    <form id="creditSubmit" onsubmit="return false">
+        First Name: <input class="input" type="text" id="fName" /><br>
+        Last Name: <input class="input" type="text" id="lName" /><br>
+        Badge Number: <input class="input" type="number" id="badgeID" /><br>
+        <input class="input" type="submit" onclick="checkCreds();" />
+    </form>
+</body>
+
+</html>
